@@ -1,7 +1,7 @@
 # SCOT - System Closing Orchestration Tool
 
 Solução desenvolvida para auxiliar nas rotinas de Fechamento Contábil do Grupo Boticário.
-Fesenvolvidos que executam operações de apoio à planilha que mantem as atividades do fechamento contábil.
+Desenvolvidas Functions que executam operações de apoio à planilha que mantem as atividades do fechamento contábil.
 
 ## Estrutura das Functions no Google Apps Script
 
