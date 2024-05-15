@@ -1,7 +1,7 @@
 # SCOT - System Closing Orchestration Tool
 
 Solução desenvolvida para auxiliar nas rotinas de Fechamento Contábil do Grupo.
-Desenvolvidas Functions que executam operações de apoio à planilha que mantem as atividades do fechamento contábil.
+Efetua um controle efetivo das atividades relacionadas ao fechamento. Dispara automaticamente as aticidades. Controla o Andamento e escala para os Gestores tanto atividades Reabertas como Atrasadas. Entrega Reports para Acomanhamento Técnico e Gerencial através de Dashboards dinâmicos no Google Looker Studio.
 
 ## Estrutura das Functions no Google Apps Script
 
