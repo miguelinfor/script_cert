@@ -5,7 +5,26 @@ Fesenvolvidos que executam operações de apoio à planilha que mantem as ativid
 
 ## Estrutura das Functions no Google Apps Script
 
-![Diagram](./.img/mermaid-diagram.png)
+<!-- ![Diagram](./.img/mermaid-diagram.png) -->
+
+``` mermaid
+graph  TD;
+sequenceDiagram
+    A[criarFormularioEEnviar];
+    A --> B[alterarValorNotificaStatusExecute];
+    A --> C[enviarMensagemSlack];
+    A --> X[Cria Trigger armazenarResposta];
+    B --> P[alterarValorNotificaStatusExecute=Iniciada];
+    C --> I[enviarMensagemSlackComMencao];
+    C --> M[enviaSlackMessageDirectPayload];
+    D[Trigger armazenarResposta];
+    D --> E[deleteFormTrigger];
+    D --> F[deleteForms];
+    D --> G[alteraValorGenerico=Resolvida];
+    P[TriggerInicial chron-> 1-59 * * * *];
+    Z[Responde Formulario];
+    Z --> D;
+```
 
 ## Funções Principais
 
