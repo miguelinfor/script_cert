@@ -61,7 +61,64 @@ Atualiza o status das tarefas na planilha e envia formulários para executores q
 ### `alterarValorNotificaStatusExecute()`
 Subfunção que atualiza o status das tarefas para "Iniciada".
 
-## Desenho da Solução
+
+# Documentação do Aplicativo Slack Bot
+
+Este documento fornece uma visão geral do aplicativo Slack e explica como ele funciona. O Aplicativo criado para receber a resposta do formulário criado através do "Slack Block Kit" para receber a resposta do Usuário após a execução da Atividade.
+
+## Introdução
+
+O aplicativo Slack é uma integração que permite interagir com o Slack através de mensagens e ações em blocos. Ele pode ser configurado para responder a eventos específicos e executar ações em resposta a esses eventos.
+
+## Configuração
+
+Antes de usar o aplicativo Slack, você precisa configurar algumas variáveis de ambiente e permissões de integração:
+
+- `SLACK_BOT_TOKEN`: Token de autenticação do bot Slack.
+- `SLACK_SIGNING_SECRET`: Segredo de assinatura do Slack para verificar solicitações recebidas.
+- `REFRESH_TOKEN`: Token de atualização para autenticação com uma API externa.
+- `CLIENT_ID`: ID do cliente para autenticação com a API externa.
+- `CLIENT_SECRET`: Segredo do cliente para autenticação com a API externa.
+- `URLAPI`: URL da API externa para enviar dados.
+
+## Funcionalidades
+
+O aplicativo Slack possui as seguintes funcionalidades principais:
+
+### 1. Manipulação de Eventos
+
+O aplicativo pode manipular eventos do Slack, como cliques em botões.
+
+### 2. Envio de Mensagens
+
+Ele pode enviar mensagens para canais Slack em resposta a eventos.
+
+### 3. Integração com API Externa
+
+O aplicativo integra-se a uma API externa para realizar ações adicionais, como gravar respostas em um banco de dados.
+
+## Utilização
+
+O aplicativo é implantado como uma Cloud Function no Google Cloud Platform. Ele escuta solicitações HTTP POST e executa a lógica com base nos dados recebidos.
+
+### Exemplo de Uso
+
+```javascript
+// Enviar uma mensagem para o chat e realizar uma requisição POST para uma API externa
+async function exemploUso() {
+  // Enviar mensagem no chat
+  await app.client.chat.postMessage({
+    token: process.env.SLACK_BOT_TOKEN,
+    channel: 'channel_id',
+    text: 'Mensagem de exemplo!'
+  });
+
+  // Realizar a requisição POST
+  await enviarPostParaURL(value, action_id);
+}
+
+
+
+## Desenho Alto nível da Solução
 
 ![Diagrama Solução](./.img/FerramentaCronogramaSlack.drawio.svg)
-
