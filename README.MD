@@ -1,4 +1,4 @@
-# SCO - System Closeing Orchestration [Chronogram Orchestrator Tool]
+# SCOT - System Closing Orchestration Tool
 
 Solução desenvolvida para auxiliar nas rotinas de Fechamento Contábil do Grupo Boticário.
 Fesenvolvidos que executam operações de apoio à planilha que mantem as atividades do fechamento contábil.
