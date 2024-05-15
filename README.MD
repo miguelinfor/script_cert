@@ -1,6 +1,6 @@
 # SCOT - System Closing Orchestration Tool
 
-A Solução desenvolvida, é composta por um conjunto de ferramentas de mercado tem como objetivo apoiar a rotina de Fechamento Contábil do Grupo. Efetuando um controle efetivo das atividades de fechamento de forma automática, através do controle do Andamento das atividades. Os Reports de Acomanhamento Técnico e Gerencial realizados em tempo real através de Dashboards dinâmicos no Google Looker Studio auxiliam na tomada de decisão e evolução da maturidade do processo.
+A Solução desenvolvida consiste em um conjunto de ferramentas de mercado, com o objetivo de otimizar o Fechamento Contábil do Grupo. Proporciona um controle automatizado das atividades de fechamento, acompanhando seu progresso de maneira eficaz. Os relatórios de Acompanhamento Técnico e Gerencial, acessíveis em tempo real por meio de Dashboards dinâmicos no Google Looker Studio, são fundamentais para a tomada de decisões e para aprimorar a maturidade do processo.
 
 ## Estrutura das Functions no Google Apps Script
 
